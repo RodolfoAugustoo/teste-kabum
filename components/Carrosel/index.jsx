@@ -4,6 +4,7 @@ import ArrowPrevious from "../../assets/icons/arrow-previous.svg";
 import ArrowNext from "../../assets/icons/arrow-next.svg";
 
 import * as C from "./style";
+import { useRef } from "react";
 
 export default function Carrossel() {
   const ofertas = [
@@ -67,19 +68,96 @@ export default function Carrossel() {
         },
       ],
     },
+    {
+      id: 6,
+      nome: "Produto 6",
+      preco: 6,
+      imagem: "Imagemmmmm",
+      labels: [
+        {
+          id: 6,
+          nome: "label 6",
+        },
+      ],
+    },
+    {
+      id: 7,
+      nome: "Produto 7",
+      preco: 7,
+      imagem: "Imagemmmmm",
+      labels: [
+        {
+          id: 7,
+          nome: "label 7",
+        },
+      ],
+    },
+    {
+      id: 8,
+      nome: "Produto 8",
+      preco: 8,
+      imagem: "Imagemmmmm",
+      labels: [
+        {
+          id: 8,
+          nome: "label 8",
+        },
+      ],
+    },
+    {
+      id: 9,
+      nome: "Produto 9",
+      preco: 9,
+      imagem: "Imagemmmmm",
+      labels: [
+        {
+          id: 9,
+          nome: "label 9",
+        },
+      ],
+    },
+    {
+      id: 10,
+      nome: "Produto 10",
+      preco: 10,
+      imagem: "Imagemmmmm",
+      labels: [
+        {
+          id: 10,
+          nome: "label 10",
+        },
+      ],
+    },
   ];
 
+  const carroselRef = useRef(null);
+
+  const handleLeft = (e) => {
+    e.preventDefault();
+    const { current } = carroselRef;
+    current.scrollLeft -= 220;
+  };
+  const handleRight = (e) => {
+    e.preventDefault();
+    const { current } = carroselRef;
+    current.scrollLeft = current.scrollLeft + 220;
+  };
+
   return (
-    <C.Div>
-      <C.ArrowPrevious>
-        <Image src={ArrowPrevious} alt='arrow-previous' />
-      </C.ArrowPrevious>
-      {ofertas.map((oferta) => (
-        <Card key={oferta.id} oferta={oferta} />
-      ))}
-      <C.ArrowNext>
-        <Image src={ArrowNext} alt='arrow-next' />
-      </C.ArrowNext>
-    </C.Div>
+    <C.Teste>
+      <C.Div ref={carroselRef}>
+        {ofertas.map((oferta) => (
+          <Card key={oferta.id} oferta={oferta} />
+        ))}
+      </C.Div>
+      <C.Teste2>
+        <C.ArrowPrevious onClick={handleLeft}>
+          <Image src={ArrowPrevious} alt='arrow-previous' />
+        </C.ArrowPrevious>
+        <C.ArrowNext onClick={handleRight}>
+          <Image src={ArrowNext} alt='arrow-next' />
+        </C.ArrowNext>
+      </C.Teste2>
+    </C.Teste>
   );
 }
