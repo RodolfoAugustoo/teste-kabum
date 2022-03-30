@@ -17,13 +17,13 @@ export default function Home() {
 
       <Header />
       <main>
-        <G.Container bgColor='white' flexDirection='column'>
+        <G.Container flexDirection='column' alignItems='center'>
           <Banner />
-          <article>
+          <G.Article>
             <Campaing />
             <Carrossel />
             <BrowserBy />
-          </article>
+          </G.Article>
         </G.Container>
       </main>
 

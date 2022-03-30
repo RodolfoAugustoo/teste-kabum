@@ -15,7 +15,7 @@ export default function HeaderDefault() {
         <G.Container alignItems='center'>
           <IconMenuHamburger />
           <H.Logo>
-            <Image src={Logo} />
+            <Image src={Logo} alt='Logo KAbum' />
           </H.Logo>{" "}
           <Search />
           <User />

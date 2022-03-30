@@ -13,7 +13,7 @@ export default function Card({ oferta }) {
       <Favs />
       <C.Info>
         <C.ImageWrap>
-          <Image src={ProductImage} />
+          <Image src={ProductImage} alt='produto' />
         </C.ImageWrap>
         <C.TextNormal>Fabricante</C.TextNormal>
         <C.TextBold>{a}</C.TextBold>

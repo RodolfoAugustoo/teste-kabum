@@ -14,7 +14,7 @@ export const Card = styled.div`
   }
 `;
 
-export const Info = styled.p`
+export const Info = styled.div`
   padding: 0 1rem;
 `;
 

@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const Div = styled.div`
   display: flex;
   gap: 16px;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-color: white;
   width: 100%;
+  background-color: white;
 `;
 
 export const ArrowNext = styled.div`

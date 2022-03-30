@@ -8,6 +8,7 @@ export const Campaing = styled.div`
   height: 68px;
   width: 100%;
   padding: 8px 72px;
+  margin-bottom: 34px;
   background-color: #ff6500;
 `;
 

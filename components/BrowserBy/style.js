@@ -6,7 +6,7 @@ export const BrowserBy = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 234px;
-  margintop: 84px;
+  margin-top: 84px;
   padding: 0 72px;
 `;
 

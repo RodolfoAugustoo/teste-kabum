@@ -60,3 +60,13 @@ export const Container = styled.div`
     max-width: 90%;
   }
 `;
+
+export const Article = styled.article`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0 40px; */
+  background: white;
+  width: 100%;
+`;
