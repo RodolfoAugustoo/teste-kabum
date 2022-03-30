@@ -11,6 +11,29 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
+}
+
+img {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Poppins, sans-serif !important;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
