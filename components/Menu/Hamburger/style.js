@@ -6,6 +6,7 @@ export const Menu = styled.div`
   justify-content: space-between;
   width: 18px;
   height: 14px;
+  margin: 0 28px 0 0;
   cursor: pointer;
 `;
 

@@ -72,13 +72,13 @@ export default function Carrossel() {
   return (
     <C.Div>
       <C.ArrowPrevious>
-        <Image src={ArrowPrevious} />
+        <img src={ArrowPrevious} />
       </C.ArrowPrevious>
       {ofertas.map((oferta) => (
-        <Card oferta={oferta} />
+        <Card key={oferta.id} oferta={oferta} />
       ))}
       <C.ArrowNext>
-        <Image src={ArrowNext} />
+        <img src={ArrowNext} />
       </C.ArrowNext>
     </C.Div>
   );

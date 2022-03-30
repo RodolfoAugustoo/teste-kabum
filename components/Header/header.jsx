@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import HeaderDefault from "./Default";
 import HeaderMobile from "./Mobile";
-import HeaderSticky from "./Sticky";
-import SubMenu from "./SubMenu";
 
 export default function Header() {
   const [width, setWidth] = useState(null);
@@ -16,12 +14,8 @@ export default function Header() {
 
   const renderHeader = () => {
     if (width !== null) {
-      if (width > 720)
-        return (
-          <>
-            <HeaderDefault /> <SubMenu />
-          </>
-        );
+      if (width > 768) return <HeaderDefault />;
+
       return <HeaderMobile />;
     }
     return null;

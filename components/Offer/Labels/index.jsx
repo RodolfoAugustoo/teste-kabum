@@ -6,7 +6,7 @@ export default function Label({ labels }) {
   return (
     <L.Div>
       {labels.map((label) => (
-        <L.DivFlex>
+        <L.DivFlex key={label.nome}>
           <Image src={IconTruck} />
           <L.TextNormal>{label.nome}</L.TextNormal>
         </L.DivFlex>

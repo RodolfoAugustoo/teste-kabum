@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Input = styled.input`
   height: 36px;
-  width: 530px;
   text-align: start;
-  margin: 0 42px 8px 0;
+  margin-bottom: 8px;
   padding: 6px 34px 7px 12px;
   border: 0;
 
@@ -40,4 +39,6 @@ export const Input = styled.input`
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
+  width: 530px;
+  margin-right: 72px;
 `;

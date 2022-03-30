@@ -19,7 +19,7 @@ export default function BrowserBy() {
       img: SecondImg,
     },
     {
-      id: 1,
+      id: 3,
       name: "Conheça nossos produtos de leilão",
       descricao: "As melhores oportunidades de compra.",
       img: ThirdImg,
@@ -29,7 +29,7 @@ export default function BrowserBy() {
   return (
     <B.BrowserBy>
       {list.map((item) => (
-        <B.Item>
+        <B.Item key={item.id}>
           <B.Info>
             <B.Title>{item.name}</B.Title>
             <B.Description>{item.descricao}</B.Description>

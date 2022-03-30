@@ -4,6 +4,8 @@ export const Div = styled.div`
   display: flex;
   gap: 16px;
   position: relative;
+  background-color: white;
+  width: 100%;
 `;
 
 export const ArrowNext = styled.div`

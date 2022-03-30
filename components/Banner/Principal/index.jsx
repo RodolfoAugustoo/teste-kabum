@@ -5,7 +5,7 @@ import * as B from "./style";
 export default function Banner() {
   return (
     <B.a>
-      <Image src={ImgBanner} />
+      <img src={ImgBanner} />
     </B.a>
   );
 }
