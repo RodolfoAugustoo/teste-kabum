@@ -50,12 +50,12 @@ export const Container = styled.div`
   align-items: ${({ alignItems }) => alignItems || "baseline"};
   justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
   max-width: 1440px;
-  width: 1440px;
+  width: ${({ containerWidth }) => containerWidth || "1440px"};
   margin: 0 auto;
   background: ${({ bgColor }) => bgColor || "transparent"};
   padding: ${({ padding }) => padding || "initial"};
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1280px) {
     max-width: 90%;
   }
 
@@ -70,7 +70,6 @@ export const Article = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 0 40px; */
   background: white;
   width: 100%;
 `;

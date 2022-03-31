@@ -1,22 +1,27 @@
 import Image from "next/image";
-import * as HO from "./optionsStyles";
+import { useCartContext } from "../../_Context/cart";
 
 import IconCart from "../../../assets/icons/cart.svg";
 import IconHeart from "../../../assets/icons/heart.svg";
 import IconSAC from "../../../assets/icons/sac.svg";
 
+import * as HO from "./styles";
+
 export default function Options() {
+  const { cartItems } = useCartContext();
+
   return (
-    <HO.Div>
+    <HO.OptionsContainer>
       <HO.ImageWrap>
-        <Image src={IconSAC}></Image>
+        <Image src={IconSAC} alt='Ícone SAC' />
       </HO.ImageWrap>
       <HO.ImageWrap>
-        <Image src={IconHeart} />
+        <Image src={IconHeart} alt='Ícone favoritos' />
       </HO.ImageWrap>
       <HO.ImageWrap>
-        <Image src={IconCart} />
+        <Image src={IconCart} alt='Ícone carrinho' />
+        {cartItems > 0 && <HO.CartQuantity>{cartItems}</HO.CartQuantity>}
       </HO.ImageWrap>
-    </HO.Div>
+    </HO.OptionsContainer>
   );
 }

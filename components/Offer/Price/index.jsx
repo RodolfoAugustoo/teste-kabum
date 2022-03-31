@@ -2,7 +2,7 @@ import * as P from "./style";
 
 export default function Price({ product }) {
   return (
-    <P.Div>
+    <P.PriceContainer>
       <P.TextNormalDarkLine>
         {product.price.toLocaleString("pt-BR", {
           style: "currency",
@@ -16,6 +16,6 @@ export default function Price({ product }) {
         })}
       </P.TextOrange>
       <P.TextNormalDark>À VISTA</P.TextNormalDark>
-    </P.Div>
+    </P.PriceContainer>
   );
 }

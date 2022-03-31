@@ -2,12 +2,9 @@ import * as A from "./style";
 
 export default function Address() {
   return (
-    <A.Div>
+    <A.AddressContainer>
       <A.TextBold>Enviar para: </A.TextBold>{" "}
-      <A.TextThin>
-        {" "}
-        ` Rua das Hortências, 295 - Boa Vista - Limeira SP`
-      </A.TextThin>
-    </A.Div>
+      <A.Text> ` Rua das Hortências, 295 - Boa Vista - Limeira SP`</A.Text>
+    </A.AddressContainer>
   );
 }

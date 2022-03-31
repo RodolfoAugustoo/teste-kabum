@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderMobile = styled.div`
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,7 +9,7 @@ export const HeaderMobile = styled.div`
   width: 100%;
   padding: 24px;
   background-color: #0060b1;
-  z-index: 99;
+  /* z-index: 99; */
 `;
 
 export const Menus = styled.div`

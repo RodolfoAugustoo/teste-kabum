@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Div = styled.div`
+export const SubMenuContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   background-color: #ff6500;
@@ -23,12 +23,12 @@ export const Select = styled.div`
 `;
 
 export const Text = styled.p`
-  color: white;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
   width: 210px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: white;
+  text-transform: uppercase;
   text-align: left;
   cursor: pointer;
 `;

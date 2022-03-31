@@ -9,7 +9,6 @@ export const Div = styled.div`
 
 export const TextNormal = styled.p`
   font-size: 12px;
-  /* line-height: 18px; */
   font-weight: 400;
   color: #7f858d;
   text-transform: uppercase;

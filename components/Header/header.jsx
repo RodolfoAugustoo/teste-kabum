@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import HeaderDefault from "./Default";
 import HeaderMobile from "./Mobile";
+import { HeaderContainer } from "./style";
 
 export default function Header() {
   const [width, setWidth] = useState(null);
@@ -14,9 +15,11 @@ export default function Header() {
 
   const renderHeader = () => {
     if (width !== null) {
-      if (width > 768) return <HeaderDefault />;
-
-      return <HeaderMobile />;
+      return (
+        <HeaderContainer>
+          {width > 768 ? <HeaderDefault /> : <HeaderMobile />}
+        </HeaderContainer>
+      );
     }
     return null;
   };

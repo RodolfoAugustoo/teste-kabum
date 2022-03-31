@@ -53,6 +53,7 @@ export const MenuContentListItem = styled.li`
 export const MenuContentListLink = styled.a`
   font-size: 16px;
   padding: 16px 8px;
+  text-transform: capitalize;
 `;
 
 export const ButtonClose = styled.span`

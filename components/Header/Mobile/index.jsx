@@ -1,9 +1,9 @@
-import Logo from "../../../assets/icons/Logo.svg";
 import Image from "next/image";
+import Logo from "../../../assets/icons/Logo.svg";
 import IconMenuHamburger from "../../Menu/Hamburger";
 import Search from "../../Search";
-import * as HM from "./style";
 import Options from "../Options";
+import * as HM from "./style";
 
 export default function HeaderMobile() {
   return (

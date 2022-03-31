@@ -10,6 +10,13 @@ export const Campaing = styled.div`
   padding: 8px 72px;
   margin-bottom: 34px;
   background-color: #ff6500;
+
+  @media (max-width: 768px) {
+    padding: 8px 32px;
+  }
+  @media (max-width: 540px) {
+    padding: 8px;
+  }
 `;
 
 export const Info = styled.div`
@@ -28,6 +35,15 @@ export const Title = styled.p`
   text-align: left;
   text-transform: uppercase;
   color: white;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  @media (max-width: 540px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 `;
 
 export const Warning = styled.p`
@@ -37,4 +53,14 @@ export const Warning = styled.p`
   line-height: 28px;
   letter-spacing: 0px;
   color: white;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  @media (max-width: 540px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 `;

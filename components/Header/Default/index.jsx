@@ -20,7 +20,9 @@ export default function HeaderDefault() {
           <H.Input>
             <Search />
           </H.Input>
-          <User />
+          <H.UserInfo>
+            <User />
+          </H.UserInfo>
           <Options />
         </G.Container>
       </H.Main>

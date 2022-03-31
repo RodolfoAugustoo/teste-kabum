@@ -26,7 +26,7 @@ export const ArrowPrevious = styled.div`
   background: white;
 `;
 
-export const Teste = styled.div`
+export const CarouselContainer = styled.div`
   width: 100%;
   overflow: hidden;
   transition: 200ms;
@@ -36,12 +36,21 @@ export const Teste = styled.div`
   padding: 0 40px;
 `;
 
-export const Teste2 = styled.div`
+export const CarouselControlLeft = styled.div`
   position: absolute;
   display: flex;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
   left: 0;
   top: 0;
+`;
+
+export const CarouselControlRight = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  top: 0;
+  justify-content: flex-end;
+  right: 0;
 `;

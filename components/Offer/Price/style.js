@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Div = styled.div`
+export const PriceContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

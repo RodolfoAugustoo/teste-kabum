@@ -1,9 +1,10 @@
 import Image from "next/image";
-import * as C from "./style";
 import Price from "../Price";
 import Label from "../Labels";
 import Favs from "../Favs";
 import Button from "../Button";
+
+import * as C from "./style";
 
 export default function Card({ product }) {
   return (

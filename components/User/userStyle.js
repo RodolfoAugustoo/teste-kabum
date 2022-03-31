@@ -1,13 +1,21 @@
 import styled from "styled-components";
 
-export const Div = styled.div`
+export const UserContainer = styled.div`
   display: flex;
   width: 170px;
   height: 36px;
   cursor: pointer;
+
+  @media (max-width: 1024px) {
+    width: 80px;
+  }
+`;
+export const UserName = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
-export const UserName = styled.p`
+export const UserFirstName = styled.p`
   font-size: 12px;
   font-weight: 700;
   line-height: 18px;
@@ -15,9 +23,19 @@ export const UserName = styled.p`
   margin: 0;
 `;
 
+export const UserLastName = styled(UserFirstName)`
+  @media (max-width: 1280px) {
+    display: none;
+  }
+`;
+
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const Avatar = styled.div`
