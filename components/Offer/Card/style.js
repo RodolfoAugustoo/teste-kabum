@@ -50,6 +50,8 @@ export const TextBold = styled.p`
   line-height: 18px;
   font-weight: 700;
   margin-bottom: 32px;
+  height: 40px;
+  overflow: hidden;
   color: #42464d;
 `;
 

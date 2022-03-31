@@ -4,9 +4,17 @@ import ArrowPrevious from "../../assets/icons/arrow-previous.svg";
 import ArrowNext from "../../assets/icons/arrow-next.svg";
 
 import * as C from "./style";
-import { useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Carrossel() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products")
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  }, []);
+
   const ofertas = [
     {
       id: 1,
@@ -146,8 +154,8 @@ export default function Carrossel() {
   return (
     <C.Teste>
       <C.Div ref={carroselRef}>
-        {ofertas.map((oferta) => (
-          <Card key={oferta.id} oferta={oferta} />
+        {products.map((product) => (
+          <Card key={product.id} product={product} />
         ))}
       </C.Div>
       <C.Teste2>

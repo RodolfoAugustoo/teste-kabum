@@ -18,4 +18,8 @@ export const Div = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;

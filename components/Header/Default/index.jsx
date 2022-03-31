@@ -12,12 +12,14 @@ export default function HeaderDefault() {
   return (
     <>
       <H.Main>
-        <G.Container alignItems='center'>
+        <G.Container alignItems='center' justifyContent='space-between'>
           <IconMenuHamburger />
           <H.Logo>
-            <Image src={Logo} alt='Logo KAbum' />
-          </H.Logo>{" "}
-          <Search />
+            <Image src={Logo} alt='Logo Kabum' />
+          </H.Logo>
+          <H.Input>
+            <Search />
+          </H.Input>
           <User />
           <Options />
         </G.Container>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const Input = styled.input`
   height: 36px;
@@ -6,6 +7,7 @@ export const Input = styled.input`
   margin-bottom: 8px;
   padding: 6px 34px 7px 12px;
   border: 0;
+  width: 530px;
 
   ::-webkit-input-placeholder {
     text-transform: uppercase;
@@ -13,32 +15,29 @@ export const Input = styled.input`
     line-height: 18px;
     font-weight: 600;
   }
-  :active {
-    border: 1px solid white;
-  }
-  :focus {
-    border: 1px solid white;
-  }
-  :focus-within {
-    border: 1px solid white;
-  }
-  :hover {
-    border: 1px solid white;
-  }
-  :target {
-    border: 1px solid white;
-  }
-  :visited {
-    border: 1px solid white;
-  }
-  :focus-visible {
-    border: 1px solid white;
-  }
 `;
 
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
-  width: 530px;
+  width: 100%;
   margin-right: 72px;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    max-width: none;
+  }
+`;
+
+export const SearchIcon = styled.div`
+  display: flex;
+`;
+
+export const IconSearch = styled(Image)`
+  margin-left: -30px;
+`;
+
+export const ImageWrap = styled.div`
+  margin-left: -24px;
+  margin-top: -8px;
 `;

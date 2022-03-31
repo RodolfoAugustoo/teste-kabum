@@ -5,9 +5,9 @@ import * as L from "./style";
 export default function Label({ labels }) {
   return (
     <L.Div>
-      {labels.map((label) => (
+      {labels?.map((label) => (
         <L.DivFlex key={label.nome}>
-          <Image src={IconTruck} />
+          <Image src={IconTruck} alt='Icone frete grátis' />
           <L.TextNormal>{label.nome}</L.TextNormal>
         </L.DivFlex>
       ))}

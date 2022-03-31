@@ -34,7 +34,7 @@ export default function BrowserBy() {
             <B.Title>{item.name}</B.Title>
             <B.Description>{item.descricao}</B.Description>
           </B.Info>
-          <Image src={item.img} />
+          <Image src={item.img} alt={item.name} />
         </B.Item>
       ))}
     </B.BrowserBy>

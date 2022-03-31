@@ -17,3 +17,8 @@ export const Logo = styled.div`
   margin-right: 42px;
   cursor: pointer;
 `;
+
+export const Input = styled.div`
+  max-width: 534px;
+  margin-right: 72px;
+`;

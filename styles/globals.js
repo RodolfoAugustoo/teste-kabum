@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
   html,
   body {
-    min-width: 100vh;
+    min-width: 100vw;
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -48,9 +48,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: ${({ flexDirection }) => flexDirection || "row"};
   align-items: ${({ alignItems }) => alignItems || "baseline"};
+  justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
   max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   background: ${({ bgColor }) => bgColor || "transparent"};
+  padding: ${({ padding }) => padding || "initial"};
 
   @media (max-width: 1024px) {
     max-width: 90%;
@@ -58,6 +61,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     max-width: 90%;
+    padding-top: 154px;
   }
 `;
 
