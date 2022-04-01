@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este é um projeto criado com NextJS para desafio Front-end Kabum.
+
+## Softwares necessários
+
+Para executar o projeto é necessário ter o **NODE JS** instalado.
+No terminal digite
+
+```bash
+  node -v
+```
+
+Se não retornar um número indicando a versão, acesse o link https://nodejs.org/en/download para fazer o download e a instalação.
 
 ## Getting Started
 
-First, run the development server:
+Faça o clone do repositório
+
+Abra a pasta do projeto no terminal
+
+## Instalação das dependências
+
+Para instalar as dependências digite
 
 ```bash
-npm run dev
-# or
-yarn dev
+  npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Executar o projeto
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Para iniciar o projeto em ambiente local
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Modo desenvolvimento:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  npm run dev
+```
 
-## Learn More
+Para executar com
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+antes é necessário fazer **build**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Para fazer o **build** execute no terminal
 
-## Deploy on Vercel
+```bash
+  npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+e depois
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  npm start
+```
+
+O projeto fica disponível na url http://localhost:3000
