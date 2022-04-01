@@ -17,11 +17,11 @@ export default function Campaing() {
     let tempHoursISO = tempDate.toISOString().split("T")[1];
 
     const [, , day] = tempDateISO.split("-");
-    const [hours, minutes, second] = tempHoursISO.split(":");
+    const [hour, minute, second] = tempHoursISO.split(":");
 
     setDay(day);
-    setHours(hours);
-    setMinutes(minutes);
+    setHours(hour);
+    setMinutes(minute);
     setSeconds(second.split(".")[0]);
     handleTimer(second.split(".")[0]);
   }, []);
@@ -55,13 +55,22 @@ export default function Campaing() {
     setMinutes((prevState) => prevState - 1);
   };
 
+  const numberWithZeros = (number) => {
+    let numString = String(number);
+
+    if (numString.length < 2) return `0${numString}`;
+    return number;
+  };
+
   return (
     <C.Campaing>
       <C.Title>BLACK FRIDAY</C.Title>
       <C.Info>
         <C.Warning>A PROMOÇÃO TERMINA EM:</C.Warning>
         <Image width={"12px"} src={IconClock} alt='Icone relogio campanha' />
-        <C.Title>{`${day}D${hours}:${minutes}:${seconds}`}</C.Title>
+        <C.Timer>{`${day}D${numberWithZeros(hours)}:${numberWithZeros(
+          minutes
+        )}:${numberWithZeros(seconds)}`}</C.Timer>
       </C.Info>
     </C.Campaing>
   );

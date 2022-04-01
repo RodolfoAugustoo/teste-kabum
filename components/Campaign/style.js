@@ -46,6 +46,14 @@ export const Title = styled.p`
   }
 `;
 
+export const Timer = styled(Title)`
+  min-width: 150px;
+
+  @media (max-width: 768px) {
+    min-width: 100px;
+  }
+`;
+
 export const Warning = styled.p`
   font-size: 16px;
   font-style: normal;
