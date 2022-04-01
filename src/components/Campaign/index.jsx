@@ -40,7 +40,7 @@ export default function Campaing() {
   }
 
   const handleMinutes = () => {
-    if (minutes === 0) {
+    if (minutes <= 0) {
       setMinutes(59);
       handleHours();
       return;
@@ -48,7 +48,7 @@ export default function Campaing() {
     setMinutes((prevState) => prevState - 1);
   };
   const handleHours = () => {
-    if (hours === 0) {
+    if (hours <= 0) {
       setHours(24);
       return;
     }

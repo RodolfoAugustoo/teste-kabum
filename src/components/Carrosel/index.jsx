@@ -30,11 +30,11 @@ export default function Carrossel() {
           <Image src={ArrowPrevious} alt='arrow-previous' />
         </C.ArrowPrevious>
       </C.CarouselControlLeft>
-      <C.Div ref={carouselRef}>
+      <C.CarouselList ref={carouselRef}>
         {products.map((product) => (
           <Card key={product.id} product={product} />
         ))}
-      </C.Div>
+      </C.CarouselList>
       <C.CarouselControlRight>
         <C.ArrowNext onClick={handleRight}>
           <Image src={ArrowNext} alt='arrow-next' />

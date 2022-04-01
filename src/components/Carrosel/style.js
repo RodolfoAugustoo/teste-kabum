@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Div = styled.div`
+export const CarouselList = styled.div`
   display: flex;
   gap: 16px;
   position: relative;
