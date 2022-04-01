@@ -23,7 +23,7 @@ export function SearchProvider({ children, ...props }) {
           p.title.toUpperCase().includes(text.toUpperCase())
         )
       );
-    handleSearch();
+    else handleSearch();
   };
 
   const searchProps = {
