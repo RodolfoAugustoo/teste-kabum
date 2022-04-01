@@ -22,6 +22,7 @@ export default createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    font-family: Poppins, sans-serif !important
   }
 
   img {
