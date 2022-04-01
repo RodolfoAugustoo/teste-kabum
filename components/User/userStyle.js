@@ -13,6 +13,7 @@ export const UserContainer = styled.div`
 export const UserName = styled.div`
   display: flex;
   flex-wrap: wrap;
+  column-gap: 4px;
 `;
 
 export const UserFirstName = styled.p`

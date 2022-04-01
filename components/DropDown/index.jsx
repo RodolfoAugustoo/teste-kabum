@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import * as D from "./styles";
 import IconChevronDown from "../../assets/icons/chevron-down.svg";
+import * as D from "./styles";
 
-const options = ["Hardware", "Periféricos", "Games"];
-
-export default function DropDown() {
+export default function DropDown({ data }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [options, setOptions] = useState([]);
+
+  useEffect(() => {
+    setOptions(data);
+  }, [data]);
 
   const toggle = () => setIsOpen(!isOpen);
 

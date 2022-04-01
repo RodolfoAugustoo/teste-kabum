@@ -9,7 +9,7 @@ import * as C from "./style";
 export default function Card({ product }) {
   return (
     <C.Card>
-      <Favs />
+      <Favs rate={product?.rating?.rate} />
       <C.Info>
         <C.ImageWrap>
           <Image
